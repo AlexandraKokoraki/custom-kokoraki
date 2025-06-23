@@ -7,14 +7,63 @@
   <title>Υπηρεσίες | Κοκοράκη Αλεξάνδρα</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f7fa; }
-    header, footer { background: #003366; color: white; text-align: center; padding: 20px; }
-    nav ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; }
-    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
-    main { padding: 20px; max-width: 900px; margin: auto; }
-    h2 { color: #003366; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 15px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f7f9fc, #dfe6ed);
+    }
+    header, footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #003366;
+    }
+    .accordion {
+      background-color: #e0ecf6;
+      color: #003366;
+      cursor: pointer;
+      padding: 15px;
+      margin-top: 10px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.1em;
+      transition: background-color 0.2s ease;
+    }
+    .accordion:hover {
+      background-color: #c8dff0;
+    }
+    .panel {
+      padding: 0 15px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+      border-left: 3px solid #003366;
+      border-right: 3px solid #003366;
+      border-bottom: 3px solid #003366;
+    }
   </style>
 </head>
 <body>
@@ -30,27 +79,55 @@
   </header>
   <main>
     <h2>Τι προσφέρουμε</h2>
-    <ul>
-      <li><strong>Εκτελωνισμός εισαγόμενων ή εξαγόμενων εμπορευμάτων:</strong> Διαχείριση όλων των τελωνειακών διαδικασιών για εισαγωγές και εξαγωγές.</li>
-      <li><strong>Εκτελωνισμός εισαγόμενων οχημάτων (Ι.Χ., φορτηγά, μοτοσυκλέτες, σκάφη):</strong><br>
-        Αναλαμβάνουμε πλήρως τη διαδικασία εκτελωνισμού για οχήματα ιδιωτικής και επαγγελματικής χρήσης, ανεξαρτήτως χώρας προέλευσης.<br>
-        Εξειδίκευση σε:<br>
-        🚗 Ιδιωτικής χρήσης επιβατικά αυτοκίνητα<br>
-        🏍️ Μοτοσυκλέτες – Scooter – ATV<br>
-        🛥️ Σκάφη αναψυχής & επαγγελματικά πλοιάρια<br>
-        🚛 Φορτηγά και επαγγελματικά οχήματα
-      </li>
-      <li><strong>Εκτελωνισμός μικροδεμάτων (Courier)</strong></li>
-      <li><strong>Έκδοση EORI</strong></li>
-      <li><strong>Τελωνειακή αποταμίευση</strong></li>
-      <li><strong>Ειδικά Καθεστώτα</strong></li>
-      <li><strong>Εφοδιασμοί (Πλοίων/Αεροσκαφών/Διπλωματικών)</strong></li>
-      <li><strong>Carne ATA</strong></li>
-      <li><strong>Πιστοποιητικά: T2L, EUR.1, A-TR</strong></li>
-    </ul>
+
+    <button class="accordion">Εκτελωνισμός εισαγόμενων ή εξαγόμενων εμπορευμάτων</button>
+    <div class="panel"><p>Διαχείριση όλων των τελωνειακών διαδικασιών για εισαγωγές και εξαγωγές.</p></div>
+
+    <button class="accordion">Εκτελωνισμός εισαγόμενων οχημάτων (Ι.Χ., φορτηγά, μοτοσυκλέτες, σκάφη)</button>
+    <div class="panel">
+      <p>Αναλαμβάνουμε πλήρως τη διαδικασία εκτελωνισμού για οχήματα ιδιωτικής και επαγγελματικής χρήσης, ανεξαρτήτως χώρας προέλευσης.</p>
+      <ul>
+        <li>🚗 Ιδιωτικής χρήσης επιβατικά αυτοκίνητα</li>
+        <li>🏍️ Μοτοσυκλέτες – Scooter – ATV</li>
+        <li>🛥️ Σκάφη αναψυχής & επαγγελματικά πλοιάρια</li>
+        <li>🚛 Φορτηγά και επαγγελματικά οχήματα</li>
+      </ul>
+    </div>
+
+    <button class="accordion">Εκτελωνισμός μικροδεμάτων (Courier)</button>
+    <div class="panel"><p>Εξειδικευμένη διαχείριση δεμάτων μέσω courier από χώρες εντός και εκτός Ε.Ε. με ταχύτητα και ευκολία.</p></div>
+
+    <button class="accordion">Έκδοση EORI</button>
+    <div class="panel"><p>Απόκτηση αριθμού EORI απαραίτητου για την πραγματοποίηση τελωνειακών συναλλαγών στην Ε.Ε.</p></div>
+
+    <button class="accordion">Τελωνειακή αποταμίευση</button>
+    <div class="panel"><p>Ενδιάμεση αποθήκευση εμπορευμάτων χωρίς καταβολή δασμών και ΦΠΑ έως την τελική διάθεση.</p></div>
+
+    <button class="accordion">Ειδικά Καθεστώτα</button>
+    <div class="panel"><p>Διαχείριση προσωρινής εισαγωγής ή εξαγωγής χωρίς τελωνειακές επιβαρύνσεις.</p></div>
+
+    <button class="accordion">Εφοδιασμοί (Πλοίων/Αεροσκαφών/Διπλωματικών)</button>
+    <div class="panel"><p>Διαδικασίες ανεφοδιασμού για πλοία, αεροπλάνα και διπλωματικές αποστολές με τελωνειακή υποστήριξη.</p></div>
+
+    <button class="accordion">Carne ATA</button>
+    <div class="panel"><p>Έκδοση προσωρινού τελωνειακού διαβατηρίου για εκθέσεις, επαγγελματικό εξοπλισμό, εμπορεύματα.</p></div>
+
+    <button class="accordion">Πιστοποιητικά: T2L, EUR.1, A-TR</button>
+    <div class="panel"><p>Έκδοση και υποστήριξη τελωνειακών πιστοποιητικών για ειδικές εμπορικές συναλλαγές.</p></div>
   </main>
   <footer>
     <p>&copy; 2025 Κοκοράκη Αλεξάνδρα. Όλα τα δικαιώματα διατηρούνται.</p>
   </footer>
+
+  <script>
+    const acc = document.querySelectorAll('.accordion');
+    acc.forEach(btn => {
+      btn.addEventListener('click', function () {
+        this.classList.toggle('active');
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
 </body>
 </html>
