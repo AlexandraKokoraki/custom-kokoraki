@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Χρήσιμες Πληροφορίες</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f3f6f9; margin: 0; }
+    header, footer {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+    }
+    h1, h2, h3 {
+      color: #003366;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    ul { padding-left: 20px; }
+    .accordion {
+      background-color: #eee;
+      color: #003366;
+      cursor: pointer;
+      padding: 14px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+      margin-top: 5px;
+    }
+    .active, .accordion:hover {
+      background-color: #ccc;
+    }
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+      border-left: 3px solid #003366;
+    }
+    .panel ul { margin-bottom: 1em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Χρήσιμες Πληροφορίες</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Αρχική</a></li>
+        <li><a href="services.html">Υπηρεσίες</a></li>
+        <li><a href="links.html">Χρήσιμα Links</a></li>
+        <li><a href="useful_info.html">Πληροφορίες</a></li>
+        <li><a href="contact.html">Επικοινωνία</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <section>
+      <h2>Εκτελωνισμός Αυτοκινήτου</h2>
+      <p>Αν θέλετε να μάθετε πόσο ακριβώς θα σας κοστίσει η εισαγωγή του αυτοκινήτου που επιθυμείτε, επικοινωνήστε μαζί μας.</p>
+      <p>Αναλαμβάνουμε όλες τις διαδικασίες για την εισαγωγή στην Ελλάδα.</p>
+      <h3>Απαραίτητα στοιχεία:</h3>
+      <ul>
+        <li>Μοντέλο</li><li>Έγκριση τύπου (Euro)</li><li>Έτος κυκλοφορίας</li><li>Χιλιόμετρα</li><li>Ρύποι (g/km)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Μετοικούντες</h2>
+      <p>Δικαίωμα απαλλαγών για άτομα που μεταφέρουν την κύρια κατοικία τους στην Ελλάδα.</p>
+      <p><strong>Αποδεικτικά:</strong> υπηκοότητα, κατοικία, εργασία, λογαριασμοί, οικογενειακή κατάσταση, φοίτηση παιδιών, κοινωνική ασφάλεια.</p>
+    </section>
+
+    <section>
+      <h2>Πολύτεκνοι & Τρίτεκνοι</h2>
+      <p>Δικαίωμα ατέλειας στο τέλος ταξινόμησης για αυτοκίνητα έως 2000cc, με απαραίτητα δικαιολογητικά.</p>
+      <ul>
+        <li>Πιστοποιητικό οικογενειακής κατάστασης</li>
+        <li>Βεβαίωση συλλόγου ή υπεύθυνη δήλωση</li>
+        <li>Δικαστική απόφαση για επιμέλεια σε περίπτωση διαζυγίου</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Διεθνείς Εμπορικοί Όροι (Incoterms)</h2>
+      <p>Οι όροι που καθορίζουν τις ευθύνες και τα έξοδα στη μεταφορά μεταξύ πωλητή και αγοραστή. Περιλαμβάνουν μεταφορικά, ασφάλιση, παραδόσεις και ρίσκο.</p>
+
+      <button class="accordion">Κατηγορία E</button>
+      <div class="panel">
+        <p><strong>EXW – Ex Works:</strong> Ο πωλητής διαθέτει το εμπόρευμα στις εγκαταστάσεις του.</p>
+      </div>
+
+      <button class="accordion">Κατηγορία F</button>
+      <div class="panel">
+        <ul>
+          <li><strong>FCA:</strong> Free Carrier</li>
+          <li><strong>FAS:</strong> Free Alongside Ship</li>
+          <li><strong>FOB:</strong> Free On Board</li>
+        </ul>
+      </div>
+
+      <button class="accordion">Κατηγορία C</button>
+      <div class="panel">
+        <ul>
+          <li><strong>CFR:</strong> Cost And Freight</li>
+          <li><strong>CIF:</strong> Cost, Insurance & Freight</li>
+          <li><strong>CPT:</strong> Carriage Paid To</li>
+          <li><strong>CIP:</strong> Carriage & Insurance Paid To</li>
+        </ul>
+      </div>
+
+      <button class="accordion">Κατηγορία D</button>
+      <div class="panel">
+        <ul>
+          <li><strong>DAF:</strong> Delivered At Frontier</li>
+          <li><strong>DES:</strong> Delivered Ex Ship</li>
+          <li><strong>DEQ:</strong> Delivered Ex Quay (Duty Paid)</li>
+          <li><strong>DDU:</strong> Delivered Duty Unpaid</li>
+          <li><strong>DDP:</strong> Delivered Duty Paid</li>
+          <li><strong>DAP:</strong> Delivered At Place</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 Κοκοράκη Αλεξάνδρα. Όλα τα δικαιώματα διατηρούνται.</p>
+  </footer>
+  <script>
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
