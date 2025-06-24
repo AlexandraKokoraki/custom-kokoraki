@@ -9,24 +9,91 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body, html { height: 100%; font-family: Arial, sans-serif; }
-    header, footer { background: rgba(0, 0, 0, 0.7); color: white; text-align: center; padding: 20px; z-index: 2; position: relative; }
-    nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; padding: 0; }
-    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
-    main { padding: 30px; max-width: 900px; margin: auto; z-index: 2; position: relative; background-color: rgba(255, 255, 255, 0.9); border-radius: 10px; margin-top: 40px; }
-    footer { margin-top: 40px; }
-    video.bg-video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; z-index: 0; object-fit: cover; }
+    header, footer {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      z-index: 2;
+      position: relative;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      z-index: 2;
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+    video.bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: 0;
+      object-fit: cover;
+    }
     .logo { display: block; max-width: 180px; margin: 10px auto 20px auto; }
     h1, h2 { text-align: center; color: #003366; }
-    .services-preview { margin-top: 20px; font-size: 1.1em; }
     .services-preview ul { padding-left: 20px; }
     .services-preview li { margin-bottom: 10px; }
+    .popup-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 10;
+      cursor: pointer;
+    }
+    .popup-form {
+      display: none;
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 20;
+      width: 280px;
+    }
+    .popup-form form { display: flex; flex-direction: column; font-size: 0.9em; }
+    .popup-form input, .popup-form textarea {
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .popup-form button {
+      padding: 8px;
+      border: none;
+      background-color: #003366;
+      color: white;
+      cursor: pointer;
+      margin-top: 5px;
+      border-radius: 5px;
+    }
+    .popup-form button[type="button"] { background-color: #888; }
   </style>
 </head>
 <body>
   <video autoplay muted loop class="bg-video">
     <source src="container-ship-video.mp4" type="video/mp4" />
   </video>
-
   <header>
     <img src="LOGO.png" alt="Kokorakis Logo" class="logo" />
     <h1>Εκτελωνιστικό Γραφείο Κοκοράκη Αλεξάνδρα</h1>
@@ -34,17 +101,14 @@
       <ul>
         <li><a href="index.html">Αρχική</a></li>
         <li><a href="services.html">Υπηρεσίες</a></li>
+        <li><a href="links.html">Χρήσιμα Links</a></li>
         <li><a href="contact.html">Επικοινωνία</a></li>
       </ul>
     </nav>
   </header>
-
   <main>
     <h2>Μια Τελωνειακή Κληρονομιά από το 1978</h2>
-    <p>
-      Το εκτελωνιστικό γραφείο μας ιδρύθηκε με βάση την πολυετή εμπειρία του πατέρα μας στον χώρο του εκτελωνισμού. Με περηφάνια συνεχίζουμε την οικογενειακή αυτή πορεία, προσφέροντας αξιόπιστες και διαφανείς λύσεις για κάθε τελωνειακή ανάγκη.
-    </p>
-
+    <p>Το εκτελωνιστικό γραφείο μας ιδρύθηκε με βάση την πολυετή εμπειρία του πατέρα μας στον χώρο του εκτελωνισμού. Με περηφάνια συνεχίζουμε την οικογενειακή αυτή πορεία, προσφέροντας αξιόπιστες και διαφανείς λύσεις για κάθε τελωνειακή ανάγκη.</p>
     <div class="services-preview">
       <h2>Αναλαμβάνουμε:</h2>
       <ul>
@@ -56,86 +120,58 @@
         <li>Αποταμιεύσεις, Εφοδιασμούς, Carne ATA</li>
       </ul>
     </div>
-  </main>
+  
+    <section style="margin-top: 40px;">
+      <h2 style="text-align:center; color:#003366;">Γιατί να μας επιλέξετε</h2>
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
+        <div style="flex:1; min-width:200px; max-width:220px; background:#f9f9f9; padding:20px; border-radius:10px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+          <div style="font-size:40px;">🛡️</div>
+          <h3 style="color:#003366;">Ποιοτικές υπηρεσίες</h3>
+          <p>Προσφέρουμε ποιοτικές εκτελωνιστικές υπηρεσίες με ασφάλεια και ταχύτητα.</p>
+        </div>
+        <div style="flex:1; min-width:200px; max-width:220px; background:#f9f9f9; padding:20px; border-radius:10px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+          <div style="font-size:40px;">💶</div>
+          <h3 style="color:#003366;">Ανταγωνιστικές τιμές</h3>
+          <p>Υπηρεσίες υψηλής ποιότητας σε πολύ ανταγωνιστικές τιμές χωρίς κρυφές χρεώσεις.</p>
+        </div>
+        <div style="flex:1; min-width:200px; max-width:220px; background:#f9f9f9; padding:20px; border-radius:10px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+          <div style="font-size:40px;">👥</div>
+          <h3 style="color:#003366;">Εξειδικευμένοι συνεργάτες</h3>
+          <p>Διαθέτουμε ένα ευρύ, αξιόπιστο και έμπειρο δίκτυο συνεργατών προς όφελός σας.</p>
+        </div>
+        <div style="flex:1; min-width:200px; max-width:220px; background:#f9f9f9; padding:20px; border-radius:10px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+          <div style="font-size:40px;">🤝</div>
+          <h3 style="color:#003366;">Σχέσεις εμπιστοσύνης</h3>
+          <p>Έχουμε σχέσεις μακροχρόνιας εμπιστοσύνης και άψογης συνεργασίας με τους πελάτες μας.</p>
+        </div>
+      </div>
+    </section>
+    </main>
+    
+  <footer><p>&copy; 2025 Κοκοράκη Αλεξάνδρα. All rights reserved.</p></footer>
 
-  <footer>
-    <p>&copy; 2025 Κοκοράκη Αλεξάνδρα. Όλα τα δικαιώματα διατηρούνται.</p>
-  </footer>
+  <!-- Floating contact popup -->
+  <div class="popup-button" onclick="togglePopup()">
+    <img src="https://img.icons8.com/fluency/48/customer-support.png" alt="Επικοινωνία">
+  </div>
+  <div class="popup-form" id="contactPopup">
+    <form action="https://formsubmit.co/info@customs-kokoraki.com" method="POST">
+      <h3>Επικοινωνία</h3>
+      <label>Ονοματεπώνυμο</label><input type="text" name="Ονοματεπώνυμο" required>
+      <label>Τηλέφωνο</label><input type="tel" name="Τηλέφωνο" required>
+      <label>Email</label><input type="email" name="Email" required>
+      <label>Μήνυμα</label><textarea name="Μήνυμα" rows="4" required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">Αποστολή</button>
+      <button type="button" onclick="togglePopup()">Κλείσιμο</button>
+    </form>
+  </div>
 
-<!-- Floating Contact Icon -->
-<div class="popup-button" onclick="togglePopup()">
-  <img src="https://img.icons8.com/fluency/48/customer-support.png" alt="Επικοινωνία">
-</div>
-
-<!-- Popup Form -->
-<div class="popup-form" id="contactPopup">
-  <form action="https://formsubmit.co/info@customs-kokoraki.com" method="POST">
-    <h3>Επικοινωνία</h3>
-    <label>Ονοματεπώνυμο</label><br>
-    <input type="text" name="Ονοματεπώνυμο" required><br>
-    <label>Τηλέφωνο</label><br>
-    <input type="tel" name="Τηλέφωνο" required><br>
-    <label>Email</label><br>
-    <input type="email" name="Email" required><br>
-    <label>Μήνυμα</label><br>
-    <textarea name="Μήνυμα" rows="4" required></textarea><br>
-    <input type="hidden" name="_captcha" value="false">
-    <button type="submit">Αποστολή</button>
-    <button type="button" onclick="togglePopup()">Κλείσιμο</button>
-  </form>
-</div>
-
-<style>
-  .popup-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 10;
-    cursor: pointer;
-  }
-  .popup-form {
-    display: none;
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    z-index: 20;
-    width: 280px;
-  }
-  .popup-form form {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.9em;
-  }
-  .popup-form input, .popup-form textarea {
-    margin-bottom: 10px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  .popup-form button {
-    padding: 8px;
-    border: none;
-    background-color: #003366;
-    color: white;
-    cursor: pointer;
-    margin-top: 5px;
-    border-radius: 5px;
-  }
-  .popup-form button[type="button"] {
-    background-color: #888;
-  }
-</style>
-
-<script>
-  function togglePopup() {
-    const popup = document.getElementById('contactPopup');
-    popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
-  }
-</script>
-
+  <script>
+    function togglePopup() {
+      const popup = document.getElementById('contactPopup');
+      popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
 </body>
 </html>
