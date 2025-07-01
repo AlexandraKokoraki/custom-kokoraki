@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Συχνές Ερωτήσεις | Εκτελωνιστικό Γραφείο Κοκοράκη Αλεξάνδρα</title>
+  <meta name="description" content="Απαντήσεις σε συχνές ερωτήσεις για εκτελωνισμό οχημάτων και εμπορευμάτων. Πληροφορίες για τελωνειακές διαδικασίες, έγγραφα και κόστος.">
+  <meta name="keywords" content="ερωτήσεις εκτελωνισμός, συχνές ερωτήσεις τελωνείο, εκτελωνισμός αυτοκινήτου ερωτήσεις, εισαγωγή container ερωτήσεις, τελωνειακές διαδικασίες">
+  <meta name="author" content="Αλεξάνδρα Κοκοράκη">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { height: 100%; font-family: Arial, sans-serif; }
+    header, footer {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      z-index: 2;
+      position: relative;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      z-index: 2;
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    video.bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: 0;
+      object-fit: cover;
+    }
+    .logo { display: block; max-width: 180px; margin: 10px auto 20px auto; }
+    h1, h2 { text-align: center; color: #003366; }
+    .popup-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 10;
+      cursor: pointer;
+    }
+    .popup-form {
+      display: none;
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 20;
+      width: 280px;
+    }
+    .popup-form form { display: flex; flex-direction: column; font-size: 0.9em; }
+    .popup-form input, .popup-form textarea {
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .popup-form button {
+      padding: 8px;
+      border: none;
+      background-color: #003366;
+      color: white;
+      cursor: pointer;
+      margin-top: 5px;
+      border-radius: 5px;
+    }
+    .popup-form button[type="button"] { background-color: #888; }
+    
+    /* FAQ Specific Styles */
+    .faq-container {
+      margin-top: 30px;
+    }
+    .faq-item {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%;
+      padding: 15px;
+      text-align: left;
+      background: #f5f5f5;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #003366;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-question:hover {
+      background: #e9e9e9;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 1.5rem;
+    }
+    .faq-question.active::after {
+      content: '-';
+    }
+    .faq-answer {
+      padding: 0 15px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease;
+    }
+    .faq-answer.active {
+      padding: 15px;
+      max-height: 500px;
+    }
+    .faq-answer ul {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+    .faq-answer li {
+      margin-bottom: 8px;
+    }
+    .faq-category {
+      margin-top: 40px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #003366;
+      color: #003366;
+    }
+    .contact-prompt {
+      background: #e0ecf6;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+      text-align: center;
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7V6MVTWZ8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E7V6MVTWZ8');
+  </script>
+  <!-- Schema.org Markup for FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Πόσο χρόνο διαρκεί ο εκτελωνισμός ενός οχήματος;",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ο χρόνος εκτελωνισμού οχήματος εξαρτάται από την ολοκλήρωση των απαιτούμενων εγγράφων και την τελωνειακή αρχή. Γενικά, η διαδικασία διαρκεί 1-3 εργάσιμες ημέρες από την υποβολή όλων των εγγράφων."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Τι έγγραφα χρειάζονται για εκτελωνισμό αυτοκινήτου;",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Για εκτελωνισμό αυτοκινήτου απαιτούνται: 1) Πιστοποιητικό κυκλοφορίας (COC), 2) Τιμολόγιο αγοράς, 3) Δήλωση εκτελωνισμού, 4) Ταυτότητα/Διαβατήριο, 5) Αριθμός EORI (αν υπάρχει). Για μετοικούντες/πολύτεκνους, απαιτούνται πρόσθετα έγγραφα."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ποια είναι η διαδικασία για εισαγωγή container από Κίνα;",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Η διαδικασία περιλαμβάνει: 1) Προετοιμασία εγγράφων (τιμολόγια, packing list, πιστοποιητικά προέλευσης), 2) Υποβολή στη τελωνειακή αρχή, 3) Πληρωμή δασμών & ΦΠΑ, 4) Φυσικός έλεγχος (αν απαιτείται), 5) Απελευθέρωση φορτίου. Η διαδικασία διαρκεί 2-5 εργάσιμες ημέρες."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Πώς υπολογίζεται το κόστος εκτελωνισμού;",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Το κόστος αποτελείται από: 1) Τελωνειακές ταρίφες (ανάλογα με την κατηγορία προϊόντος), 2) ΦΠΑ (24% για περισσότερα αγαθά), 3) Τετραπλά δικαιώματα (για οχήματα), 4) Επαγγελματικές μας χρεώσεις. Παρέχουμε προκαταρκτική εκτίμηση με βάση τις πληροφορίες που μας δίνετε."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Τι είναι ο αριθμός EORI και πώς τον αποκτώ;",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ο αριθμός EORI (Economic Operators Registration and Identification) είναι απαραίτητος για όλες τις εισαγωγές/εξαγωγές στην ΕΕ. Μπορείτε να τον αποκτήσετε μέσω της τελωνειακής αρχής υποβάλλοντας αίτηση με τα απαιτούμενα έγγραφα. Εμείς μπορούμε να σας βοηθήσουμε με τη διαδικασία."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <video autoplay muted loop id="bg-video" style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; z-index: -1;">
+    <source src="container-ship-video.mp4" type="video/mp4">
+  </video>
+  <header>
+    <img src="LOGO.png" alt="Εκτελωνιστικό Γραφείο Κοκοράκη" class="logo" />
+    <h1 style="font-size: 2.4em; font-weight: bold; text-shadow: 2px 2px 4px #000;">Συχνές Ερωτήσεις<br>Εκτελωνιστικού Γραφείου</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Αρχική</a></li>
+        <li><a href="services.html">Υπηρεσίες</a></li>
+        <li><a href="useful_info.html">Πληροφορίες</a></li>
+        <li><a href="links.html">Χρήσιμα Links</a></li>
+        <li><a href="contact.html">Επικοινωνία</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <p style="text-align: center; margin-bottom: 30px;">Βρείτε απαντήσεις στις πιο συχνές ερωτήσεις σχετικά με τελωνειακές διαδικασίες, έγγραφα και κόστος. Αν δεν βρείτε αυτό που ψάχνετε, μη διστάσετε να <a href="contact.html" style="color: #003366; font-weight: bold;">επικοινωνήσετε</a> μαζί μας.</p>
+    
+    <div class="faq-container">
+      <h2 class="faq-category">Ερωτήσεις για Εκτελωνισμό Οχημάτων</h2>
+      
+      <div class="faq-item">
+        <button class="faq-question">Πόσο χρόνο διαρκεί ο εκτελωνισμός ενός οχήματος;</button>
+        <div class="faq-answer">
+          <p>Ο χρόνος εκτελωνισμού οχήματος εξαρτάται από:</p>
+          <ul>
+            <li>Την ολοκλήρωση των απαιτούμενων εγγράφων</li>
+            <li>Την τελωνειακή αρχή που θα γίνει ο εκτελωνισμός</li>
+            <li>Την ύπαρξη (ή όχι) φυσικού ελέγχου</li>
+          </ul>
+          <p>Γενικά, η διαδικασία διαρκεί <strong>1-3 εργάσιμες ημέρες</strong> από την υποβολή όλων των εγγράφων. Για οχήματα που απαιτούν τεχνικό έλεγχο (π.χ. ηλικίας άνω των 5 ετών), η διαδικασία μπορεί να διαρκέσει έως 5 ημέρες.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Τι έγγραφα χρειάζονται για εκτελωνισμό αυτοκινήτου;</button>
+        <div class="faq-answer">
+          <p>Τα βασικά έγγραφα που απαιτούνται είναι:</p>
+          <ul>
+            <li>Πιστοποιητικό Κυκλοφορίας (COC) ή πιστοποιητικό συμμόρφωσης</li>
+            <li>Τιμολόγιο αγοράς (Invoice) με σαφή περιγραφή του οχήματος</li>
+            <li>Δήλωση εκτελωνισμού</li>
+            <li>Ταυτότητα ή διαβατήριο ιδιοκτήτη</li>
+            <li>Αριθμός EORI (αν υπάρχει)</li>
+          </ul>
+          <p><strong>Για μετοικούντες/πολύτεκνους:</strong> Απαιτούνται πρόσθετα έγγραφα όπως βεβαίωση μετοικεσίας από Πρεσβεία, πιστοποιητικό πολυτέκνου κ.ά.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Πόσο κοστίζει ο εκτελωνισμός ενός αυτοκινήτου;</button>
+        <div class="faq-answer">
+          <p>Το κόστος εκτελωνισμού οχήματος περιλαμβάνει:</p>
+          <ul>
+            <li><strong>Τετραπλά δικαιώματα:</strong> 20% της αξίας του οχήματος (υπολογίζεται με βάση την τιμή αγοράς ή την εμπορική αξία)</li>
+            <li><strong>ΦΠΑ:</strong> 24% (εκτός αν υπάρχει ατέλεια)</li>
+            <li><strong>Τελωνειακές χρεώσεις:</strong> Μεταβλητές ανάλογα με την τελωνειακή αρχή</li>
+            <li><strong>Επαγγελματικές μας χρεώσεις:</strong> Καθορίζονται με βάση την πολυπλοκότητα της υπόθεσης</li>
+          </ul>
+          <p>Παρέχουμε <strong>δωρεάν προκαταρκτική εκτίμηση</strong> με βάση τις πληροφορίες που μας δίνετε.</p>
+        </div>
+      </div>
+      
+      <h2 class="faq-category">Ερωτήσεις για Εκτελωνισμό Εμπορευμάτων</h2>
+      
+      <div class="faq-item">
+        <button class="faq-question">Ποια είναι η διαδικασία για εισαγωγή container από Κίνα;</button>
+        <div class="faq-answer">
+          <p>Η διαδικασία εισαγωγής container από Κίνα περιλαμβάνει τα εξής βήματα:</p>
+          <ol>
+            <li><strong>Προετοιμασία εγγράφων:</strong> Τιμολόγια (Commercial Invoice), Packing List, Πιστοποιητικό Προέλευσης, Bill of Lading/Air Waybill, πιστοποιητικά υγιεινής (για τρόφιμα)</li>
+            <li><strong>Υποβολή στη τελωνειακή αρχή:</strong> Υποβάλλονται ηλεκτρονικά όλα τα έγγραφα</li>
+            <li><strong>Πληρωμή δασμών & ΦΠΑ:</strong> Οι δασμοί ποικίλλουν από 0% έως 17% ανάλογα με την κατηγορία προϊόντος</li>
+            <li><strong>Φυσικός έλεγχος:</strong> Αν απαιτείται (τυχαία επιλογή ή για συγκεκριμένες κατηγορίες προϊόντων)</li>
+            <li><strong>Απελευθέρωση φορτίου:</strong> Μετά την ολοκλήρωση όλων των διαδικασιών</li>
+          </ol>
+          <p>Η διαδικασία διαρκεί συνήθως <strong>2-5 εργάσιμες ημέρες</strong> από την άφιξη του container.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Τι έγγραφα χρειάζονται για εισαγωγή τροφίμων;</button>
+        <div class="faq-answer">
+          <p>Για εισαγωγή τροφίμων απαιτούνται τα ακόλουθα έγγραφα:</p>
+          <ul>
+            <li>Τιμολόγια (Commercial Invoice) με λεπτομερή περιγραφή των προϊόντων</li>
+            <li>Packing List με ακριβή ποσότητες και βάρη</li>
+            <li>Πιστοποιητικό Υγιεινής (Health Certificate) από την αρμόδια αρχή της χώρας προέλευσης</li>
+            <li>Πιστοποιητικό Προέλευσης (Certificate of Origin) αν υπάρχει συμφωνία ελεύθερου εμπορίου</li>
+            <li>Ανάλυση προϊόντος (για συγκεκριμένα τρόφιμα)</li>
+            <li>Άδεια ΕΟΔΥ (για ορισμένες κατηγορίες τροφίμων)</li>
+          </ul>
+          <p>Σημαντικό: Τα τρόφιμα ζωικής προέλευσης (κρέας, γαλακτοκομικά, ψάρια) έχουν <strong>πιο αυστηρές απαιτήσεις</strong> και μπορεί να απαιτείται ειδική άδεια.</p>
+        </div>
+      </div>
+      
+      <h2 class="faq-category">Γενικές Ερωτήσεις</h2>
+      
+      <div class="faq-item">
+        <button class="faq-question">Τι είναι ο αριθμός EORI και πώς τον αποκτώ;</button>
+        <div class="faq-answer">
+          <p>Ο αριθμός <strong>EORI</strong> (Economic Operators Registration and Identification) είναι:</p>
+          <ul>
+            <li>Μοναδικός αριθμός ταυτοποίησης για όλες τις συναλλαγές με τελωνεία στην ΕΕ</li>
+            <li>Απαραίτητος τόσο για ιδιώτες όσο και για επιχειρήσεις που κάνουν εισαγωγές/εξαγωγές</li>
+            <li>Ισχύει σε όλη την Ευρωπαϊκή Ένωση</li>
+          </ul>
+          <p><strong>Διαδικασία λήψης:</strong></p>
+          <ol>
+            <li>Συμπλήρωση αίτησης στην τελωνειακή αρχή</li>
+            <li>Υποβολή απαιτούμενων εγγράφων (ΑΦΜ, ταυτότητα, διαβατήριο κ.ά.)</li>
+            <li>Εκδίδεται εντός 1-3 εργάσιμων ημερών</li>
+          </ol>
+          <p>Εμείς μπορούμε να σας <strong>βοηθήσουμε με τη διαδικασία</strong> χωρίς πρόσθετο κόστος για υφιστάμενους πελάτες.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Πώς μπορώ να πληρώσω τα τελωνειακά δικαιώματα;</button>
+        <div class="faq-answer">
+          <p>Οι πληρωμές για τελωνειακά δικαιώματα και ΦΠΑ μπορούν να γίνουν:</p>
+          <ul>
+            <li><strong>Άμεσα από εσάς:</strong> Σε τράπεζα με πληρωμή σε Τελωνειακό Λογαριασμό</li>
+            <li><strong>Μέσω του γραφείου μας:</strong> Πληρώνουμε εκ μέρους σας (προϋπόθεση προκαταβολής)</li>
+            <li><strong>Ηλεκτρονικά:</strong> Μέσω web banking (παρέχουμε οδηγίες)</li>
+          </ul>
+          <p>Σημείωση: Για ποσά άνω των 500€, συνιστάται ηλεκτρονική πληρωμή λόγω ταχύτερης διαδικασίας.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Υπάρχει δυνατότητα express εκτελωνισμού;</button>
+        <div class="faq-answer">
+          <p>Ναι, προσφέρουμε <strong>express εκτελωνισμό</strong> για επείγουσες περιπτώσεις:</p>
+          <ul>
+            <li><strong>Για αεροπορικές αποστολές:</strong> Εκτελωνισμός εντός 24 ωρών (υπό προϋποθέσεις)</li>
+            <li><strong>Για οχήματα:</strong> Εξειδικευμένη διαδικασία με προτεραιότητα (1 ημέρα)</li>
+            <li><strong>Για φαρμακευτικά προϊόντα/ανθρώπινη βοήθεια:</strong> Ειδική διαδικασία</li>
+          </ul>
+          <p>Η express υπηρεσία συνεπάγεται <strong>πρόσθετο κόστος</strong> ανάλογα με την περίπτωση. Παρακαλούμε επικοινωνήστε μαζί μας για περισσότερες πληροφορίες.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="contact-prompt">
+      <h3>Δεν βρήκατε την απάντηση που αναζητάτε;</h3>
+      <p>Επικοινωνήστε μαζί μας μέσω τηλεφώνου, email ή χρησιμοποιώντας τη φόρμα επικοινωνίας. Θα χαρούμε να σας βοηθήσουμε με οποιαδήποτε ερώτηση σχετικά με τις τελωνειακές διαδικασίες.</p>
+      <p><strong>Τηλέφωνο:</strong> <a href="tel:+306984575194" style="color: #003366; font-weight: bold;">+30 698 457 5194</a><br>
+      <strong>Email:</strong> <a href="mailto:info@customs-kokoraki.com" style="color: #003366; font-weight: bold;">info@customs-kokoraki.com</a></p>
+    </div>
+  </main>
+  
+  <footer><p>&copy; 2025 Κοκοράκη Αλεξάνδρα. All rights reserved.</p></footer>
+
+  <!-- Floating contact popup -->
+  <div class="popup-button" onclick="togglePopup()">
+    <img src="https://img.icons8.com/fluency/48/customer-support.png" alt="Επικοινωνία">
+  </div>
+  <div class="popup-form" id="contactPopup">
+    <form action="https://formsubmit.co/info@customs-kokoraki.com" method="POST">
+      <h3>Επικοινωνία</h3>
+      <label>Ονοματεπώνυμο</label><input type="text" name="Ονοματεπώνυμο" required>
+      <label>Τηλέφωνο</label><input type="tel" name="Τηλέφωνο" required>
+      <label>Email</label><input type="email" name="Email" required>
+      <label>Μήνυμα</label><textarea name="Μήνυμα" rows="4" required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">Αποστολή</button>
+      <button type="button" onclick="togglePopup()">Κλείσιμο</button>
+    </form>
+  </div>
+
+  <script>
+    function togglePopup() {
+      const popup = document.getElementById('contactPopup');
+      popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+    }
+    
+    // FAQ Toggle Functionality
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        question.classList.toggle('active');
+        answer.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
