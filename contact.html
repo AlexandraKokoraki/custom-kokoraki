@@ -2,151 +2,279 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <title>Εκτελωνιστικό Γραφείο Κοκοράκη Αλεξάνδρα | Εκτελωνισμός Οχημάτων, Εμπορευμάτων, EORI</title>
-  <meta name="description" content="Αναλαμβάνουμε εισαγωγές και εκτελωνισμούς οχημάτων, αυτοκινήτων, μοτοσυκλετών, σκαφών και εμπορευμάτων. Έκδοση EORI, αποταμίευση, πιστοποιητικά T2L, EUR.1, συμβουλευτική. Εμπειρία από το 1989.">
-  <meta name="keywords" content="εκτελωνιστής, εκτελωνιστικό γραφείο, εισαγωγή αυτοκινήτου, εκτελωνισμός οχήματος, εισαγωγή οχήματος από εξωτερικό, EORI, τελωνειακή αποταμίευση, προσωρινή εισαγωγή, EUR.1, A-TR, T2L, εκτελωνισμός εμπορευμάτων, πιστοποιητικά τελωνείου, εκτελωνισμός courier, τελωνείο Πειραιάς, Κερατσίνι, διεθνές εμπόριο, τελωνείο Αθηνών, τελωνείο Ελ. Βενιζέλος, τελωνείο αεροδρόμιο, DHL, UPS, FedEx, TNT, Goldair, Cosco, MSC, Logika, Maersk, Arkas">
-  <meta name="author" content="Αλεξάνδρα Κοκοράκη">
-  <meta name="robots" content="index, follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Geolocation Meta Tags -->
-  <meta name="geo.region" content="GR-A1">
-  <meta name="geo.placename" content="Κερατσίνι">
-  <meta name="geo.position" content="37.9622;23.6193">
-  <meta name="ICBM" content="37.9622, 23.6193">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Επικοινωνία | Κοκοράκη Αλεξάνδρα</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <style>
-    * { box-sizing: border-box; }
-    body, html {
-      height: 100%;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #003366;
-    }
-    video.bg-video {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-      z-index: 0;
-      object-fit: cover;
-    }
-    header, footer {
-      background: rgba(0, 0, 0, 0.7);
-      color: white;
-      text-align: center;
-      padding: 20px;
-      position: relative;
-      z-index: 1;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 0;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    main {
-      position: relative;
-      z-index: 1;
-      background-color: rgba(255, 255, 255, 0.95);
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-    h1, h2 {
-      text-align: center;
-      color: #003366;
-    }
-    .info {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-    .map {
-      margin-top: 20px;
-      text-align: center;
-    }
-    .map img {
-      width: 80px;
-    }
-    a {
-      color: #003366;
-      font-weight: bold;
-    }
-  </style>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E7V6MVTWZ8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-E7V6MVTWZ8');
-</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Επικοινωνία | Εκτελωνιστικό Γραφείο Κοκοράκη Αλεξάνδρα</title>
+    <meta name="description" content="Επικοινωνήστε με το εκτελωνιστικό γραφείο μας για εκτελωνισμό οχημάτων, εμπορευμάτων και έκδοση EORI. Διεύθυνση: Υψηλάντου 24, Κερατσίνι.">
+    
+    <!-- Social & SEO Meta Tags -->
+    <meta property="og:title" content="Επικοινωνία | Εκτελωνιστικό Γραφείο Κοκοράκη Αλεξάνδρα">
+    <meta property="og:description" content="Επικοινωνήστε μαζί μας για εκτελωνισμό οχημάτων και εμπορευμάτων. Τηλέφωνο: 6977422338, WhatsApp: 6984575194">
+    <meta property="og:image" content="https://www.customs-kokoraki.com/logo.png">
+    <meta property="og:url" content="https://www.customs-kokoraki.com/contact.html">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body, html {
+            height: 100%;
+            color: #333;
+        }
+        
+        /* Video Background */
+        video.bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+        
+        /* Header - Ίδιο με τις άλλες σελίδες */
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo {
+            display: block;
+            max-width: 180px;
+            margin: 10px auto;
+        }
+        
+        .company-name {
+            font-size: 2.4em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+        
+        .company-name span {
+            display: block;
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Main Content */
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+        }
+        
+        h1 {
+            color: #003366;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        
+        .contact-info {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+        
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #003366;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+            padding: 8px 0;
+        }
+        
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-link img {
+            width: 20px;
+            height: 20px;
+        }
+        
+        /* Map Section */
+        .map-container {
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .map-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #003366;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .map-btn:hover {
+            transform: translateY(-3px);
+        }
+        
+        .map-btn img {
+            width: 20px;
+            height: 20px;
+        }
+        
+        #google-map {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Footer - Ίδιο με τις άλλες σελίδες */
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .company-name {
+                font-size: 1.8em;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            main {
+                margin: 20px 15px;
+                padding: 20px;
+            }
+            
+            #google-map {
+                height: 300px;
+            }
+        }
+    </style>
 </head>
 <body>
-  
-<video autoplay muted loop id="bg-video" style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; z-index: -1;">
-  <source src="container-ship-video.mp4" type="video/mp4">
-</video>
+    <!-- Background Video -->
+    <video autoplay muted loop class="bg-video">
+        <source src="container-ship-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-  <video autoplay muted loop class="bg-video">
-    <source src="container-ship-video.mp4" type="video/mp4" />
-  </video>
+    <!-- Header - Ίδιο με τις άλλες σελίδες -->
+    <header>
+        <img src="logo.png" alt="Εκτελωνιστικό Γραφείο Κοκοράκη" class="logo">
+        <div class="company-name">
+            Εκτελωνιστικό Γραφείο<br>
+            <span>Κοκοράκη Αλεξάνδρα</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Αρχική</a></li>
+                <li><a href="services.html">Υπηρεσίες</a></li>
+                <li><a href="useful_info.html">Πληροφορίες</a></li>
+                <li><a href="links.html">Χρήσιμα Links</a></li>
+                <li><a href="contact.html">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <h1>Επικοινωνία</h1>
-    
-<nav>
-  <ul>
-    <li><a href="index.html">Αρχική</a></li>
-    <li><a href="services.html">Υπηρεσίες</a></li>
-    <li><a href="useful_info.html">Πληροφορίες</a></li>
-    <li><a href="links.html">Χρήσιμα Links</a></li>
-    <li><a href="contact.html">Επικοινωνία</a></li>
-  </ul>
-</nav>
+    <!-- Main Content -->
+    <main>
+        <h1>Επικοινωνία</h1>
+        
+        <div class="contact-info">
+            <p><strong>Διεύθυνση:</strong> Υψηλάντου 24, Κερατσίνι 18758</p>
+            
+            <p>
+                <a href="tel:+306977422338" class="contact-link">
+                    <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Τηλέφωνο">
+                    6977422338
+                </a>
+                
+                <a href="https://wa.me/306984575194" target="_blank" class="contact-link">
+                    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+                    6984575194
+                </a>
+            </p>
+            
+            <p>
+                <a href="mailto:info@customs-kokoraki.com" class="contact-link">
+                    <img src="https://img.icons8.com/color/48/000000/email.png" alt="Email">
+                    info@customs-kokoraki.com
+                </a>
+            </p>
+        </div>
 
-      <ul>
-        <li><a href="index.html">Αρχική</a></li>
-        <li><a href="services.html">Υπηρεσίες</a></li>
-        <li><a href="links.html">Χρήσιμα Links</a></li>
-        <li><a href="contact.html">Επικοινωνία</a></li>
-      </ul>
-    </nav>
-  </header>
+        <div class="map-container">
+            <a href="https://goo.gl/maps/9z6XJ5WZ7QJ2" target="_blank" class="map-btn">
+                <img src="https://img.icons8.com/color/48/000000/google-maps.png" alt="Google Maps">
+                Άνοιγμα στο Google Maps
+            </a>
+            
+            <iframe id="google-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.2546324640252!2d23.61698981159731!3d37.971186500704455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bb6817b15951%3A0xca2d3a2472282c41!2zzpXOms6kzpXOm86pzp3Omc6jzqTOmc6azp8gzpPOoc6RzqbOlc6Zzp8gzprOn86azp_Ooc6RzprOlyDOkc6bzpXOns6Rzp3OlM6hzpE!5e0!3m2!1sel!2sgr!4v1751368889569!5m2!1sel!2sgr"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </main>
 
-  <main>
-    <h2>Ελάτε σε Επαφή Μαζί Μας</h2>
-    <div class="info">
-      <p><strong>Διεύθυνση:</strong> Υψηλάντου 24, Κερατσίνι, 18758</p>
-      <p><strong>Τηλέφωνο:</strong> 6977422338 / 6984575194</p>
-      <p><strong>Email:</strong> <a href="mailto:info@customs-kokoraki.com">info@customs-kokoraki.com</a></p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/306984575194" target="_blank">
-        <img src="https://img.icons8.com/color/20/000000/whatsapp--v1.png" alt="WhatsApp"/> Συνομιλία τώρα</a></p>
-    </div>
-    <div class="map">
-      <a href="https://g.co/kgs/vCqeCPu" target="_blank">
-        <img src="https://img.icons8.com/color/96/google-maps.png" alt="Google Maps">
-        <p>Βρες μας στον χάρτη</p>
-      </a>
-    </div>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Κοκοράκη Αλεξάνδρα. All rights reserved.</p>
-  </footer>
+    <!-- Footer - Ίδιο με τις άλλες σελίδες -->
+    <footer>
+        <p>&copy; 2023 Εκτελωνιστικό Γραφείο Κοκοράκη Αλεξάνδρα. Όλα τα δικαιώματα διατηρούνται.</p>
+    </footer>
 </body>
 </html>
