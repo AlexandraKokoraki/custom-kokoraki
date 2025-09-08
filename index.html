@@ -214,20 +214,7 @@
   <!-- Floating contact popup -->
   <div class="popup-button" onclick="togglePopup()">
     <img src="https://img.icons8.com/fluency/48/customer-support.png" alt="Επικοινωνία">
-  </div>
-  <div class="popup-form" id="contactPopup">
-    <form action="https://formsubmit.co/info@customs-kokoraki.com" method="POST">
-      <h3>Επικοινωνία</h3>
-      <label>Ονοματεπώνυμο</label><input type="text" name="Ονοματεπώνυμο" required>
-      <label>Τηλέφωνο</label><input type="tel" name="Τηλέφωνο" required>
-      <label>Email</label><input type="email" name="Email" required>
-      <label>Μήνυμα</label><textarea name="Μήνυμα" rows="4" required></textarea>
-      <input type="hidden" name="_captcha" value="false">
-      <button type="submit">Αποστολή</button>
-      <button type="button" onclick="togglePopup()">Κλείσιμο</button>
-    </form>
-  </div>
-
+  
   <script>
     function togglePopup() {
       const popup = document.getElementById('contactPopup');
