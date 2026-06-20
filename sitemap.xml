@@ -58,4 +58,60 @@
     <xhtml:link rel="alternate" hreflang="el" href="https://www.customs-kokoraki.com/links.html"/>
   </url>
 
+  <url>
+    <loc>https://www.customs-kokoraki.com/ektelonismos-autokinitou.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.customs-kokoraki.com/ektelonismos-autokinitou.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.customs-kokoraki.com/ektelonismos-aerodromio.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.customs-kokoraki.com/ektelonismos-aerodromio.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.customs-kokoraki.com/kostos-ektelonismou-container.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.customs-kokoraki.com/kostos-ektelonismou-container.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.customs-kokoraki.com/eisagogi-apo-kina.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.customs-kokoraki.com/eisagogi-apo-kina.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.customs-kokoraki.com/efodiasmoi-ploion.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.customs-kokoraki.com/efodiasmoi-ploion.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.customs-kokoraki.com/pistopoiitika-t2l-eur1-atr.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.customs-kokoraki.com/pistopoiitika-t2l-eur1-atr.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.customs-kokoraki.com/ektelonistis-peiraia.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.customs-kokoraki.com/ektelonistis-peiraia.html"/>
+  </url>
+
 </urlset>
