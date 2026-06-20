@@ -189,17 +189,20 @@
     left: 0;
     right: 0;
     background: var(--paper);
-    padding: var(--s-5) var(--gutter);
+    padding: var(--s-5) var(--gutter) 0;
     border-bottom: 1px solid var(--line);
     gap: var(--s-4);
   }
   .nav[data-open="true"] .nav__cta {
     display: inline-flex;
-    margin: 0 var(--gutter) var(--s-5);
+    justify-content: center;
     position: absolute;
-    top: calc(68px + 5 * var(--s-4) + 5 * 22px);
+    top: 68px;
     left: 0;
     right: 0;
+    margin: 0 var(--gutter);
+    width: calc(100% - 2 * var(--gutter));
+    transform: translateY(100%);
   }
   .nav__links a::after { display: none; }
 }
