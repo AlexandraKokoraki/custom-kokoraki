@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.customs-kokoraki.com/sitemap.xml
+Sitemap: https://customs-kokoraki.com/sitemap.xml
